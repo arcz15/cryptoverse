@@ -8,7 +8,7 @@ export const cryptoNewsApi = createApi({
         baseUrl,
         prepareHeaders: (headers) => {
             headers.set('X-BingApis-SDK', 'true');
-            headers.set('X-RapidAPI-Key', '11ed8449fdmsh9ecf4ecc104902dp1f2688jsn5fffbd6fbac5');
+            headers.set('X-RapidAPI-Key', import.meta.env.VITE_RAPIDAPI_KEY);
             headers.set('X-RapidAPI-Host', 'bing-news-search1.p.rapidapi.com');
             return headers;
         },
